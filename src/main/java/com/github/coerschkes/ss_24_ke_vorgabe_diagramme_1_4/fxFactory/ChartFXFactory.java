@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class DiagramFXFactory extends BaseFXFactory {
+public class ChartFXFactory extends BaseFXFactory {
     private final List<String> values = new ArrayList<>();
 
     @Override

@@ -1,6 +1,6 @@
 package com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.application;
 
-import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.fxFactory.DiagramFXFactory;
+import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.fxFactory.ChartFXFactory;
 import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.fxFactory.FXConfiguration;
 import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.fxFactory.FXFactory;
 import javafx.fxml.FXML;
@@ -13,7 +13,7 @@ public class UserSystemControl {
     private static final String BAR_GRAPH_STAGE_TITLE = "Balkendiagramm";
     private static final String CURVE_DIAGRAM_FXML = "lineChart/lineChartView.fxml";
     private static final String BAR_GRAPH_FXML = "barChart/barChartView.fxml";
-    private static final FXFactory fxFactory = new DiagramFXFactory();
+    private static final FXFactory fxFactory = new ChartFXFactory();
     @FXML
     private TextField value1;
     @FXML
@@ -38,6 +38,6 @@ public class UserSystemControl {
     }
 
     private void updateFactoryValues() {
-        ((DiagramFXFactory) fxFactory).updateValues(List.of(value1.getText(), value2.getText(), value3.getText(), value4.getText()));
+        ((ChartFXFactory) fxFactory).updateValues(List.of(value1.getText(), value2.getText(), value3.getText(), value4.getText()));
     }
 }
