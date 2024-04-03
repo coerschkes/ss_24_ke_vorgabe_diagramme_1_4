@@ -20,6 +20,7 @@ public class LineChartControl implements Diagram {
     @Override
     public void initValues(final List<String> values) {
         final XYChart.Series<Integer, Integer> series = buildSeries(values);
+        series.setName("kurve");
         lineChart.getData().add(series);
     }
 
