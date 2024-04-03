@@ -25,14 +25,19 @@ public class UserSystemControl {
 
     @FXML
     private void drawCurveDiagram() throws Exception {
-        ((DiagramFXFactory) fxFactory).updateValues(List.of(value1.getText(), value2.getText(), value3.getText(), value4.getText()));
+        updateFactoryValues();
         final FXConfiguration fxConfiguration = fxFactory.configureFxComponents(CURVE_DIAGRAM_STAGE_TITLE, CURVE_DIAGRAM_FXML);
         fxConfiguration.stage().showAndWait();
     }
 
     @FXML
     private void drawBarGraph() throws Exception {
+        updateFactoryValues();
         final FXConfiguration fxConfiguration = fxFactory.configureFxComponents(BAR_GRAPH_STAGE_TITLE, BAR_GRAPH_FXML);
         fxConfiguration.stage().showAndWait();
+    }
+
+    private void updateFactoryValues() {
+        ((DiagramFXFactory) fxFactory).updateValues(List.of(value1.getText(), value2.getText(), value3.getText(), value4.getText()));
     }
 }

@@ -9,13 +9,13 @@
             fx:controller="com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.barGraph.BarGraphControl">
     <bottom>
         <AnchorPane prefHeight="450.0" prefWidth="450.0" BorderPane.alignment="CENTER">
-            <BarChart fx:id="brChrtBalkendiagramm" layoutX="41.0" layoutY="64.0" prefHeight="348.0"
+            <BarChart fx:id="barChart" layoutX="41.0" layoutY="64.0" prefHeight="348.0"
                       prefWidth="371.0">
                 <xAxis>
-                    <CategoryAxis side="BOTTOM" fx:id="xAchse"/>
+                    <CategoryAxis side="BOTTOM" fx:id="categoryAxis"/>
                 </xAxis>
                 <yAxis>
-                    <NumberAxis fx:id="yAchse" side="LEFT"/>
+                    <NumberAxis fx:id="numberAxis" side="LEFT"/>
                 </yAxis>
             </BarChart>
         </AnchorPane>
