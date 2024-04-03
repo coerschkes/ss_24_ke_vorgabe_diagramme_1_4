@@ -1,4 +1,4 @@
-package com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.barGraph;
+package com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.barChart;
 
 import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.Diagram;
 import javafx.collections.FXCollections;
@@ -11,7 +11,7 @@ import javafx.scene.chart.XYChart;
 import java.util.Arrays;
 import java.util.List;
 
-public class BarGraphControl implements Diagram {
+public class BarChartControl implements Diagram {
 
     @FXML
     BarChart<String, Number> barChart;
@@ -24,8 +24,7 @@ public class BarGraphControl implements Diagram {
 
     public void initValues(List<String> values) {
         barChart.setTitle("Balkendiagramm");
-        categoryAxis.setCategories(FXCollections.<String>
-                observableArrayList(Arrays.asList("vor 2000", "nach 2000")));
+        categoryAxis.setCategories(FXCollections.observableArrayList(Arrays.asList("vor 2000", "nach 2000")));
         categoryAxis.setLabel("Erläuterung");
         numberAxis.setLabel("Anzahl");
 

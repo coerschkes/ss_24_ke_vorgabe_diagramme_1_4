@@ -12,7 +12,7 @@ public class UserSystemControl {
     private static final String CURVE_DIAGRAM_STAGE_TITLE = "Kurvendiagramm";
     private static final String BAR_GRAPH_STAGE_TITLE = "Balkendiagramm";
     private static final String CURVE_DIAGRAM_FXML = "lineChart/lineChartView.fxml";
-    private static final String BAR_GRAPH_FXML = "barGraph/barGraphView.fxml";
+    private static final String BAR_GRAPH_FXML = "barChart/barChartView.fxml";
     private static final FXFactory fxFactory = new DiagramFXFactory();
     @FXML
     private TextField value1;
