@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.application.UserSystemControl">
+    <bottom>
+        <AnchorPane prefHeight="380.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+            <Label layoutX="40.0" layoutY="30.0" prefHeight="46.0" prefWidth="205.0" text="Diagramme">
+                <font>
+                    <Font name="System Bold" size="24.0"/>
+                </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="80.0" text="Wert 1:"/>
+            <Label layoutX="40.0" layoutY="120.0" text="Wert 2:"/>
+            <Label layoutX="40.0" layoutY="160.0" text="Wert 3:"/>
+            <Label layoutX="40.0" layoutY="200.0" text="Wert 4:"/>
+            <TextField fx:id="value1" layoutX="130.0" layoutY="80.0" prefHeight="25.0" prefWidth="140.0"/>
+            <TextField fx:id="value2" layoutX="130.0" layoutY="120.0" prefHeight="25.0" prefWidth="140.0"/>
+            <TextField fx:id="value3" layoutX="130.0" layoutY="160.0" prefHeight="25.0" prefWidth="140.0"/>
+            <TextField fx:id="value4" layoutX="130.0" layoutY="200.0" prefHeight="25.0" prefWidth="140.0"/>
+            <Button layoutX="40.0" layoutY="260.0" mnemonicParsing="false"
+                    onAction="#drawCurveDiagram" prefHeight="25.0" prefWidth="230.0" text="Kurvendiagramm"/>
+            <Button layoutX="40.0" layoutY="300.0" mnemonicParsing="false"
+                    onAction="#drawBarGraph" prefHeight="25.0" prefWidth="230.0" text="Balkendiagramm"/>
+        </AnchorPane>
+    </bottom>
+</BorderPane>
