@@ -8,13 +8,13 @@
             fx:controller="com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.curveDiagram.CurveDiagramControl">
     <bottom>
         <AnchorPane prefHeight="450.0" prefWidth="450.0" BorderPane.alignment="CENTER">
-            <LineChart fx:id="lnChrtKurvendiagramm" layoutX="41.0" layoutY="64.0"
+            <LineChart fx:id="lineChart" layoutX="41.0" layoutY="64.0"
                        prefHeight="348.0" prefWidth="371.0">
                 <xAxis>
-                    <NumberAxis side="BOTTOM" fx:id="xAchse"/>
+                    <NumberAxis side="BOTTOM" fx:id="xAxis"/>
                 </xAxis>
                 <yAxis>
-                    <NumberAxis fx:id="yAchse" side="LEFT"/>
+                    <NumberAxis fx:id="yAxis" side="LEFT"/>
                 </yAxis>
             </LineChart>
         </AnchorPane>

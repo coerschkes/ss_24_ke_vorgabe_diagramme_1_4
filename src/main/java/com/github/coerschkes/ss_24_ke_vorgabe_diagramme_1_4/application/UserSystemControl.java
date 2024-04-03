@@ -6,6 +6,8 @@ import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.fxFactory.FXFactory;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
+import java.util.List;
+
 public class UserSystemControl {
     private static final String CURVE_DIAGRAM_STAGE_TITLE = "Kurvendiagramm";
     private static final String BAR_GRAPH_STAGE_TITLE = "Balkendiagramm";
@@ -23,6 +25,7 @@ public class UserSystemControl {
 
     @FXML
     private void drawCurveDiagram() throws Exception {
+        ((DiagramFXFactory) fxFactory).updateValues(List.of(value1.getText(), value2.getText(), value3.getText(), value4.getText()));
         final FXConfiguration fxConfiguration = fxFactory.configureFxComponents(CURVE_DIAGRAM_STAGE_TITLE, CURVE_DIAGRAM_FXML);
         fxConfiguration.stage().showAndWait();
     }
