@@ -1,6 +1,6 @@
 package com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.barChart;
 
-import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.Diagram;
+import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.Chart;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.chart.BarChart;
@@ -11,7 +11,7 @@ import javafx.scene.chart.XYChart;
 import java.util.Arrays;
 import java.util.List;
 
-public class BarChartControl implements Diagram {
+public class BarChartControl implements Chart {
 
     @FXML
     BarChart<String, Number> barChart;

@@ -1,6 +1,6 @@
 package com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.fxFactory;
 
-import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.Diagram;
+import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.Chart;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -28,7 +28,7 @@ public class DiagramFXFactory extends BaseFXFactory {
     }
 
     private void initDiagramValues(FXMLLoader loader) {
-        final Diagram controller = loader.getController();
+        final Chart controller = loader.getController();
         controller.initValues(values);
     }
 }

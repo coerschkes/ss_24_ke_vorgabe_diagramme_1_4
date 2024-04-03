@@ -1,6 +1,6 @@
 package com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.lineChart;
 
-import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.Diagram;
+import com.github.coerschkes.ss_24_ke_vorgabe_diagramme_1_4.Chart;
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
@@ -8,7 +8,7 @@ import javafx.scene.chart.XYChart;
 
 import java.util.List;
 
-public class LineChartControl implements Diagram {
+public class LineChartControl implements Chart {
 
     @FXML
     LineChart<Integer, Integer> lineChart;
